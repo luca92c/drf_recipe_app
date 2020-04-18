@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% load render_bundle from webpack_loader %}
+
+{% block content %}
+<noscript>We're sorry but frontend does not work if javascript is not enabled</noscript>
+{% endblock %}
+
+<div id="app"></div>
+
+<!-- built files will be auto injected -->
+{%  render_bundle 'app' %}
+{% endblock %}

@@ -1,0 +1,15 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block style %}
+    <link type="text/css" href="{% static 'bundle.css' %}">
+{% endblock %}
+
+{% block content %}
+<noscript>We're sorry but frontend does not work if javascript is not enabled</noscript>
+<div id="app"></div>
+{% endblock %}
+
+{% block js %}
+<script type="text/javascript" src="{% static 'bundle.js' %}"></script>
+{% endblock %}
